@@ -11,23 +11,24 @@ Some are still evolving.
 ### I Ching: Shape of Momentum
 note: A modern companion to the Book of Changes for reflection and decision making.
 link: https://iching.eggs.gd
-stack: svelte, typescript, capacitor
+stack: svelte, typescript, capacitor, ios, android, pwa
 ico: icons/iching-favicon.svg
 
 ### The War Journal
 note: AI-powered daily summaries of the war in Ukraine.
 link: https://t.me/+D-7TS_1Jn_AzNDky
-stack: python, grammy, ai
+stack: python, grammy, ai, docker
 ico: icons/war-journal.jpg
 
 ## Private
 
 ### Ulysses to TG
 note: Background service used for crossposting beauty-formatted messages between several TG channels. Supports headers, subheader, lists, all kinds of media. Can be used in pair with Ulysses app.
+stack: docker, python, grammy
 
 ### Attention Journal
 note: A journal for reflection, emotional patterns and long-term personal history.
-stack: svelte, typescript, capacitor
+stack: svelte, typescript, capacitor, ios, android, pwa
 ico: icons/diary-icon.png
 
 ### JiveMax
@@ -50,7 +51,7 @@ stack: go, svelte
 
 ### Perceptrail
 note: A self-hosted photo library with AI-assisted organization and extensible plugins.
-stack: go, svelte, python, ai
+stack: go, svelte, python, ai, docker
 
 ## Ideas
 
