@@ -22,14 +22,17 @@ ico: icons/war-journal.jpg
 
 ## Private
 
+### Ulysses to TG
+note: Background service used for crossposting beauty-formatted messages between several TG channels. Supports headers, subheader, lists, all kinds of media. Can be used in pair with Ulysses app.
+
 ### Attention Journal
 note: A journal for reflection, emotional patterns and long-term personal history.
 stack: svelte, typescript, capacitor
 ico: icons/diary-icon.png
 
 ### JiveMax
-note: A modern web interface for piCorePlayer inspired by Logitech JiveLite.
-stack: c, c++, lua
+note: A modern fluid layouted interface for piCorePlayer inspired by Logitech JiveLite.
+stack: c, c++, lua, embed
 
 ### CV Generator
 note: Generate tailored resumes from a single career history for different roles and opportunities.
