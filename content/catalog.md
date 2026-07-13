@@ -6,7 +6,7 @@ Built to solve problems I actually have.
 Some projects are finished.
 Some are still evolving.
 
-## Apps
+## Public
 
 ### I Ching: Shape of Momentum
 note: A modern companion to the Book of Changes for reflection and decision making.
@@ -25,15 +25,20 @@ note: AI-powered daily summaries of the war in Ukraine.
 link: https://t.me/+D-7TS_1Jn_AzNDky
 stack: python, grammy, ai
 
+## Private
+
+### JiveMax
+note: A modern web interface for piCorePlayer inspired by Logitech JiveLite.
+stack: c, c++, lua
+
+### CV Generator
+note: Generate tailored resumes from a single career history for different roles and opportunities.
+stack: python, ai
 
 ## Prototypes
 
 ### Book Pipeline
 note: A multi-agent workflow that turns collected notes into a structured book draft.
-stack: python, ai
-
-### CV Generator
-note: Generate tailored resumes from a single career history for different roles and opportunities.
 stack: python, ai
 
 ### Kongui
@@ -44,13 +49,11 @@ stack: go, svelte
 note: A self-hosted photo library with AI-assisted organization and extensible plugins.
 stack: go, svelte, python, ai
 
+## Ideas
+
 ### LMSense
 note: AI-generated radio stations based on mood, context and listening history.
 stack: python, ai
-
-### JiveMax
-note: A modern web interface for piCorePlayer inspired by Logitech JiveLite.
-stack: c, c++, lua
 
 ### Glados
 note: A personal AI assistant with voice, memory and local knowledge.
