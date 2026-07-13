@@ -18,6 +18,7 @@ ico: icons/iching-favicon.svg
 note: AI-powered daily summaries of the war in Ukraine.
 link: https://t.me/+D-7TS_1Jn_AzNDky
 stack: python, grammy, ai
+ico: icons/war-journal.jpg
 
 ## Private
 
