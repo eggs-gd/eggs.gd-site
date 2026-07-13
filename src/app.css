@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+	--bg: #120e0c;
+	--bg-lift: #1a1410;
+	--cream: #f4e6cc;
+	--amber: #a66131;
+	--text: #f4e6cc;
+	--text-soft: color-mix(in srgb, var(--cream) 72%, #8a6a4a);
+	--text-muted: color-mix(in srgb, var(--cream) 42%, #5c4030);
+	--border: color-mix(in srgb, var(--cream) 12%, transparent);
+	--glow: color-mix(in srgb, var(--amber) 18%, transparent);
+	--font-display: 'Instrument Serif', Georgia, serif;
+	--font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-body);
+	font-size: 16px;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	background: var(--bg);
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	background:
+		radial-gradient(ellipse at 50% -10%, var(--glow) 0%, transparent 55%),
+		url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+	pointer-events: none;
+	z-index: -1;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: var(--cream);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+	transition: color 0.15s ease;
+}
+
+a:hover {
+	color: var(--amber);
+}
+
+.page {
+	position: relative;
+	width: min(100%, 43rem);
+	margin: 0 auto;
+	padding: clamp(2.5rem, 8vw, 5rem) clamp(1.25rem, 4vw, 2rem) 3rem;
+}
+
+.hero {
+	display: grid;
+	justify-items: start;
+	gap: 0;
+	padding-bottom: clamp(2.5rem, 6vw, 4rem);
+	border-bottom: 1px solid var(--border);
+	animation: rise 0.7s ease both;
+}
+
+.title-row {
+	display: flex;
+	align-items: center;
+	gap: clamp(0.85rem, 3vw, 1.35rem);
+}
+
+.mark {
+	flex-shrink: 0;
+	width: clamp(3.75rem, 12vw, 5.25rem);
+	height: clamp(3.75rem, 12vw, 5.25rem);
+	border-radius: 50%;
+	object-fit: cover;
+	animation: settle 1s ease both;
+}
+
+h1 {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: clamp(3.25rem, 12vw, 4.75rem);
+	font-weight: 400;
+	line-height: 0.92;
+	letter-spacing: -0.02em;
+}
+
+.lede {
+	max-width: 40rem;
+	margin: 1rem 0 0;
+	color: var(--text-soft);
+	font-size: 1.15rem;
+	font-weight: 400;
+	line-height: 1.55;
+}
+
+.lede + .lede {
+	margin-top: 0.35rem;
+}
+
+.toc {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.65rem 1.25rem;
+	margin-top: 1.75rem;
+}
+
+.toc a {
+	color: var(--text-muted);
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.toc a:hover {
+	color: var(--cream);
+}
+
+.category {
+	padding: clamp(2rem, 5vw, 3rem) 0;
+	border-bottom: 1px solid var(--border);
+	animation: rise 0.7s ease both;
+	animation-delay: 0.12s;
+}
+
+.category:nth-child(3) {
+	animation-delay: 0.2s;
+}
+
+.category:nth-child(4) {
+	animation-delay: 0.28s;
+}
+
+.category h2 {
+	margin: 0 0 1.35rem;
+	color: var(--amber);
+	font-family: var(--font-body);
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.projects {
+	display: grid;
+	gap: 1.75rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.project {
+	display: grid;
+	gap: 0;
+}
+
+.project-title {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	min-width: 0;
+}
+
+.ico {
+	flex-shrink: 0;
+	width: 2.75rem;
+	height: 2.75rem;
+	border-radius: 0.55rem;
+	object-fit: cover;
+}
+
+.name {
+	font-family: var(--font-display);
+	font-size: clamp(1.65rem, 4vw, 2rem);
+	font-weight: 400;
+	line-height: 1.15;
+	text-decoration: none;
+}
+
+a.name:hover {
+	color: var(--amber);
+}
+
+span.name {
+	color: var(--text);
+}
+
+.note {
+	max-width: 40rem;
+	margin: 0.4rem 0 0;
+	color: var(--text-soft);
+	font-size: 1.02rem;
+	line-height: 1.55;
+}
+
+.stack {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem 0.75rem;
+	margin: 0.55rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.stack li {
+	color: var(--text-muted);
+	font-size: 0.78rem;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+footer {
+	padding-top: 2rem;
+	color: var(--text-muted);
+	font-size: 0.82rem;
+}
+
+@keyframes rise {
+	from {
+		opacity: 0;
+		transform: translateY(0.6rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes settle {
+	from {
+		opacity: 0;
+		transform: scale(0.92) rotate(-4deg);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	.hero,
+	.category,
+	.mark {
+		animation: none;
+	}
+}
