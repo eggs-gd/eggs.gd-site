@@ -14,18 +14,17 @@ link: https://iching.eggs.gd
 stack: svelte, typescript, capacitor
 ico: icons/iching-favicon.svg
 
-### Attention Journal
-note: A journal for reflection, emotional patterns and long-term personal history.
-link: https://diary.eggs.gd
-stack: svelte, typescript, capacitor
-ico: icons/diary-icon.png
-
 ### The War Journal
 note: AI-powered daily summaries of the war in Ukraine.
 link: https://t.me/+D-7TS_1Jn_AzNDky
 stack: python, grammy, ai
 
 ## Private
+
+### Attention Journal
+note: A journal for reflection, emotional patterns and long-term personal history.
+stack: svelte, typescript, capacitor
+ico: icons/diary-icon.png
 
 ### JiveMax
 note: A modern web interface for piCorePlayer inspired by Logitech JiveLite.
