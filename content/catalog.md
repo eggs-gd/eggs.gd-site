@@ -9,35 +9,35 @@ Some are still evolving.
 ## Public
 
 ### I Ching: Shape of Momentum
-note: A modern companion to the Book of Changes for reflection and decision making.
+note: A modern companion to the Book of Changes focused on reflection rather than prediction. It combines traditional coin casting with a clean reading experience, personal notes and a carefully curated interpretation of all 64 hexagrams.
 link: https://iching.eggs.gd
 stack: svelte, typescript, capacitor, ios, android, pwa
 ico: icons/iching-favicon.svg
 
 ### Attention Journal
-note: A journal for reflection, emotional patterns and long-term personal history.
+note: A personal journal designed around awareness instead of productivity. It captures daily events, emotions and observations, helping reveal long-term patterns rather than simply storing notes.
 link: https://journal.eggs.gd
 stack: svelte, typescript, capacitor, ios, android, pwa
 ico: icons/diary-icon.png
 
 ### The War Journal
-note: AI-powered daily summaries of the war in Ukraine.
+note: An AI-powered news pipeline that monitors multiple sources and produces concise daily summaries of the war in Ukraine. Built to reduce information overload while preserving the important context.
 link: https://t.me/+D-7TS_1Jn_AzNDky
 stack: python, telegram, ai, docker
 ico: icons/war-journal.jpg
 
 ### Book Pipeline
-note: Transforms Telegram knowledge bases into structured book drafts using embeddings, vector search, RAG and multi-agent workflows.
+note: An AI-assisted writing pipeline that transforms years of collected Telegram notes into structured book drafts. Uses embeddings, vector search, RAG retrieval and specialized agents responsible for outlining, writing and reviewing content.
 link: https://github.com/Loot-Wins-Evil/book-pipeline-demo
 stack: python, ai, rag
 
 ### JiveMax
-note: A modern fluid-layout interface for piCorePlayer inspired by Logitech JiveLite. Redesigned the legacy UI with responsive layouts and modernized the build system using Docker and GitHub Actions for automated cross-platform builds.
+note: A complete modernization of the piCorePlayer UI inspired by Logitech JiveLite. Besides redesigning the legacy UI with responsive layouts, the project also modernized the build system using Docker and GitHub Actions for automated cross-platform builds.
 link: https://github.com/dukobpa3/jivemax
 stack: c, c++, lua, embedded
 
-### Ulysses to TG
-note: REST service for publishing richly formatted content to Telegram. Handles text, media and consistent formatting across multiple channels and applications.
+### Markdown to Telegram
+note: Originally designed as a companion service for Ulysses, it evolved into a generic Telegram publishing backend. Exposes a REST API that converts Markdown and media into native Telegram formatting and supports cross-posting to multiple channels. Today it serves as the formatting layer behind several of my own applications and automation workflows.
 link: https://github.com/dukobpa3/ulysses-tg
 stack: node.js, typescript, telegram, docker
 
@@ -45,28 +45,28 @@ stack: node.js, typescript, telegram, docker
 ## Private
 
 ### CV Generator
-note: Generate tailored CVs from a single extended career history for different roles and opportunities.
+note: Generates role-specific CVs from a single comprehensive career history. Instead of maintaining multiple resumes, different versions are produced automatically based on the target role and company context.
 stack: python, ai
 
 ### Kongui
-note: A tactical card game built around prediction, positioning and asymmetric gameplay.
+note: A tactical turn-based card game where every action can be anticipated and countered. The gameplay is built around prediction, positioning, asymmetric character abilities and meaningful decision making.
 stack: go, svelte
 
 ### Perceptrail
-note: A self-hosted media library with AI-assisted organization and extensible plugins.
+note: A lightweight media explorer for existing photo libraries such as Immich. Instead of managing files, it focuses on navigation and discovery through extensible plugins, allowing users to browse collections by visual similarity, detected faces, objects, locations, colors and other custom dimensions.
 stack: go, svelte, python, ai, docker
 
 
 ## Prototypes
 
 ### LMSense
-note: AI-generated radio stations based on mood, context and listening history.
+note: An experiment in AI-generated radio stations that adapt to mood, context and listening history instead of static playlists. Designed to feel closer to a personal radio host than a recommendation engine.
 stack: go, python, ai
 
 ### Glados
-note: A personal AI assistant with voice, memory and local knowledge.
+note: A personal AI operating system with persistent memory, voice interaction and local knowledge retrieval. Intended to orchestrate multiple AI agents and external services through a unified conversational interface.
 stack: go, python, ai
 
 ### Life OS
-note: A personal operating system for knowledge, memories, routines and decision making.
+note: An ongoing exploration of a personal operating system for everyday life. Combines notes, memories, projects, routines and AI into a single environment focused on thinking, planning and long-term personal knowledge.
 stack: obsidian, svelte
