@@ -200,6 +200,20 @@ a.name:hover {
 	color: var(--amber);
 }
 
+.external-icon {
+	display: inline-block;
+	width: 0.62em;
+	height: 0.62em;
+	margin-left: 0.3em;
+	vertical-align: middle;
+	color: currentColor;
+	opacity: 0.5;
+}
+
+a.name:hover .external-icon {
+	opacity: 0.85;
+}
+
 span.name {
 	color: var(--text);
 }

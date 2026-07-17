@@ -14,6 +14,12 @@ link: https://iching.eggs.gd
 stack: svelte, typescript, capacitor, ios, android, pwa
 ico: icons/iching-favicon.svg
 
+### Attention Journal
+note: A journal for reflection, emotional patterns and long-term personal history.
+link: https://journal.eggs.gd
+stack: svelte, typescript, capacitor, ios, android, pwa
+ico: icons/diary-icon.png
+
 ### The War Journal
 note: AI-powered daily summaries of the war in Ukraine.
 link: https://t.me/+D-7TS_1Jn_AzNDky
@@ -30,11 +36,6 @@ stack: python, ai, RAG
 ### Ulysses to TG
 note: Background service used for crossposting beauty-formatted messages between several TG channels. Supports headers, subheader, lists, all kinds of media. Can be used in pair with Ulysses app.
 stack: docker, python, grammy
-
-### Attention Journal
-note: A journal for reflection, emotional patterns and long-term personal history.
-stack: svelte, typescript, capacitor, ios, android, pwa
-ico: icons/diary-icon.png
 
 ### JiveMax
 note: A modern fluid layouted interface for piCorePlayer inspired by Logitech JiveLite.
