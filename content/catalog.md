@@ -23,7 +23,7 @@ ico: icons/diary-icon.png
 ### The War Journal
 note: AI-powered daily summaries of the war in Ukraine.
 link: https://t.me/+D-7TS_1Jn_AzNDky
-stack: python, grammy, ai, docker
+stack: python, telegram, ai, docker
 ico: icons/war-journal.jpg
 
 ### Book Pipeline
@@ -31,15 +31,17 @@ note: An  AI content pipeline that transforms Telegram knowledge bases into stru
 link: https://github.com/Loot-Wins-Evil/book-pipeline-demo
 stack: python, ai, RAG
 
-## Private
+### JiveMax
+note: A modern fluid-layout interface for piCorePlayer inspired by Logitech JiveLite. Redesigned the legacy UI with responsive layouts and modernized the build system using Docker and GitHub Actions for automated cross-platform builds.
+link: https://github.com/dukobpa3/jivemax
+stack: c, c++, lua, embed
 
 ### Ulysses to TG
 note: Background service used for crossposting beauty-formatted messages between several TG channels. Supports headers, subheader, lists, all kinds of media. Can be used in pair with Ulysses app.
-stack: docker, python, grammy
+link: https://github.com/dukobpa3/ulysses-tg
+stack: docker, typescript, node.js, telegram, docker
 
-### JiveMax
-note: A modern fluid layouted interface for piCorePlayer inspired by Logitech JiveLite.
-stack: c, c++, lua, embed
+## Private
 
 ### CV Generator
 note: Generate tailored resumes from a single career history for different roles and opportunities.
