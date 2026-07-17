@@ -44,10 +44,8 @@ stack: docker, typescript, node.js, telegram, docker
 ## Private
 
 ### CV Generator
-note: Generate tailored resumes from a single career history for different roles and opportunities.
+note: Generate tailored CVs from a single extended career history for different roles and opportunities.
 stack: python, ai
-
-## Prototypes
 
 ### Kongui
 note: A tactical card game built around prediction, positioning and asymmetric gameplay.
@@ -57,15 +55,15 @@ stack: go, svelte
 note: A self-hosted photo library with AI-assisted organization and extensible plugins.
 stack: go, svelte, python, ai, docker
 
-## Ideas
+## Prototypes
 
 ### LMSense
 note: AI-generated radio stations based on mood, context and listening history.
-stack: python, ai
+stack: go, python, ai
 
 ### Glados
 note: A personal AI assistant with voice, memory and local knowledge.
-stack: python, ai
+stack: go, python, ai
 
 ### Life OS
 note: A personal operating system for knowledge, memories, routines and decision making.
