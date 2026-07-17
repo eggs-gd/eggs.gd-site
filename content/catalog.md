@@ -20,6 +20,11 @@ link: https://t.me/+D-7TS_1Jn_AzNDky
 stack: python, grammy, ai, docker
 ico: icons/war-journal.jpg
 
+### Book Pipeline
+note: An  AI content pipeline that transforms Telegram knowledge bases into structured book drafts using embeddings, vector search, RAG retrieval, outline generation, and multi-agent orchestration for writing and review.
+link: https://github.com/Loot-Wins-Evil/book-pipeline-demo
+stack: python, ai, RAG
+
 ## Private
 
 ### Ulysses to TG
@@ -40,10 +45,6 @@ note: Generate tailored resumes from a single career history for different roles
 stack: python, ai
 
 ## Prototypes
-
-### Book Pipeline
-note: A multi-agent workflow that turns collected notes into a structured book draft.
-stack: python, ai
 
 ### Kongui
 note: A tactical card game built around prediction, positioning and asymmetric gameplay.
