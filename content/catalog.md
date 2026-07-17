@@ -27,19 +27,20 @@ stack: python, telegram, ai, docker
 ico: icons/war-journal.jpg
 
 ### Book Pipeline
-note: An  AI content pipeline that transforms Telegram knowledge bases into structured book drafts using embeddings, vector search, RAG retrieval, outline generation, and multi-agent orchestration for writing and review.
+note: Transforms Telegram knowledge bases into structured book drafts using embeddings, vector search, RAG and multi-agent workflows.
 link: https://github.com/Loot-Wins-Evil/book-pipeline-demo
-stack: python, ai, RAG
+stack: python, ai, rag
 
 ### JiveMax
 note: A modern fluid-layout interface for piCorePlayer inspired by Logitech JiveLite. Redesigned the legacy UI with responsive layouts and modernized the build system using Docker and GitHub Actions for automated cross-platform builds.
 link: https://github.com/dukobpa3/jivemax
-stack: c, c++, lua, embed
+stack: c, c++, lua, embedded
 
 ### Ulysses to TG
-note: Background service used for crossposting beauty-formatted messages between several TG channels. Supports headers, subheader, lists, all kinds of media. Can be used in pair with Ulysses app.
+note: REST service for publishing richly formatted content to Telegram. Handles text, media and consistent formatting across multiple channels and applications.
 link: https://github.com/dukobpa3/ulysses-tg
-stack: docker, typescript, node.js, telegram, docker
+stack: node.js, typescript, telegram, docker
+
 
 ## Private
 
@@ -52,8 +53,9 @@ note: A tactical card game built around prediction, positioning and asymmetric g
 stack: go, svelte
 
 ### Perceptrail
-note: A self-hosted photo library with AI-assisted organization and extensible plugins.
+note: A self-hosted media library with AI-assisted organization and extensible plugins.
 stack: go, svelte, python, ai, docker
+
 
 ## Prototypes
 
@@ -67,4 +69,4 @@ stack: go, python, ai
 
 ### Life OS
 note: A personal operating system for knowledge, memories, routines and decision making.
-stack: productivity
+stack: obsidian, svelte
