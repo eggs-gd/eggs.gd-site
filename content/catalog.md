@@ -1,4 +1,4 @@
-# eggs.gd
+# earwiG Games
 
 Independent software.
 Built to solve problems I actually have.
