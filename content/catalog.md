@@ -44,9 +44,13 @@ stack: node.js, typescript, telegram, docker
 
 ## Private
 
-### CV Generator
-note: Generates role-specific CVs from a single comprehensive career history. Instead of maintaining multiple resumes, different versions are produced automatically based on the target role and company context.
-stack: python, ai
+### Nest AI
+note: A collection of specialized AI agents and automation services that work together on everyday tasks. Each agent has a focused responsibility, while shared memory and project context allow them to cooperate as a single personal workspace rather than a collection of isolated tools.
+stack: go, svelte, python, ai
+
+### Career Wizard
+note: An AI-assisted career platform that discovers opportunities, evaluates job fit, generates tailored resumes and cover letters, and manages the entire application workflow from a single place. Built around structured career data rather than one-off document generation.
+stack: python, ai, svelte, telegram
 
 ### Kongui
 note: A tactical turn-based card game where every action can be anticipated and countered. The gameplay is built around prediction, positioning, asymmetric character abilities and meaningful decision making.
