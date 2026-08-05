@@ -3,6 +3,10 @@
 Independent software.
 Built to solve problems I actually have.
 
+I don't write software for the sake of writing software.
+I build tools that replace my own workflow.
+If I don't enjoy using them every day, I keep refining them until I do.
+
 Some projects are finished.
 Some are still evolving.
 
