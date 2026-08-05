@@ -1,14 +1,13 @@
 # earwiG Games
 
 Independent software.
-Built to solve problems I actually have.
 
-I don't write software for the sake of writing software.
-I build tools that replace my own workflow.
-If I don't enjoy using them every day, I keep refining them until I do.
+Every project starts with a problem in my own workflow.
+If existing tools solve it well, I use them. If they don't, I build my own.
 
-Some projects are finished.
-Some are still evolving.
+The goal isn't to ship demos or collect technologies. It's to create tools I genuinely enjoy using every day.
+
+Some projects are finished. Some are still evolving. All of them are part of my daily life.
 
 ## Public
 
