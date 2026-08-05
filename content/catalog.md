@@ -45,11 +45,11 @@ stack: node.js, typescript, telegram, docker
 ## Private
 
 ### Nest AI
-note: A collection of specialized AI agents and automation services that work together on everyday tasks. Each agent has a focused responsibility, while shared memory and project context allow them to cooperate as a single personal workspace rather than a collection of isolated tools.
-stack: go, svelte, python, ai
+note: An AI-native execution platform where autonomous agents, shared memory, and background services collaborate through a Kanban workflow. Tasks move from planning and architecture to implementation, review, and completion, with specialized agents acting as engineers while orchestration services coordinate the delivery pipeline.
+stack: go, svelte, ai
 
 ### Career Wizard
-note: An AI-assisted career platform that discovers opportunities, evaluates job fit, generates tailored resumes and cover letters, and manages the entire application workflow from a single place. Built around structured career data rather than one-off document generation.
+note: An agent-assisted career operating system that continuously discovers opportunities, evaluates role fit, generates tailored application materials, and tracks every opportunity through a structured hiring pipeline. Built around a persistent career profile instead of disposable resumes.
 stack: python, ai, svelte, telegram
 
 ### Kongui
