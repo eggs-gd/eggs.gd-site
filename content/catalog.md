@@ -44,16 +44,17 @@ note: Originally designed as a companion service for Ulysses, it evolved into a 
 link: https://github.com/dukobpa3/ulysses-tg
 stack: node.js, typescript, telegram, docker
 
+### Career Space
+note: A job-search workspace you run by talking to a coding agent — no server, no app, no account. Evolved from a private career operating system into a public, agent-first toolkit: onboarding from an existing resume, fit checks, tailored CVs and cover letters, profile updates, job-board search, and a single view of the hiring pipeline. Personal data stays local and gitignored.
+link: https://github.com/eggs-gd/career-space
+stack: typescript, ai, mcp
+
 
 ## Private
 
 ### Nest AI
 note: An AI-native execution platform where autonomous agents, shared memory, and background services collaborate through a Kanban workflow. Tasks move from planning and architecture to implementation, review, and completion, with specialized agents acting as engineers while orchestration services coordinate the delivery pipeline.
 stack: go, svelte, ai
-
-### Career Wizard
-note: An agent-assisted career operating system that continuously discovers opportunities, evaluates role fit, generates tailored application materials, and tracks every opportunity through a structured hiring pipeline. Built around a persistent career profile instead of disposable resumes.
-stack: python, ai, svelte, telegram
 
 ### Kongui
 note: A tactical turn-based card game where every action can be anticipated and countered. The gameplay is built around prediction, positioning, asymmetric character abilities and meaningful decision making.
