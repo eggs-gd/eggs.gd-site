@@ -244,9 +244,21 @@ span.name {
 }
 
 footer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.25rem;
 	padding-top: 2rem;
 	color: var(--text-muted);
 	font-size: 0.82rem;
+}
+
+footer a {
+	color: var(--text-muted);
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: var(--amber);
 }
 
 @keyframes rise {

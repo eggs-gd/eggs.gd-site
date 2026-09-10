@@ -14,13 +14,13 @@ Some projects are finished. Some are still evolving. All of them are part of my 
 ### I Ching: Shape of Momentum
 note: Most digital I Ching tools felt trapped in old interfaces: too many panels, awkward animations and interpretations that were either too abstract to use or too oracle-like to trust. This app keeps the useful parts I was already doing with coins and a notebook: a clean casting flow, readable hexagram texts, personal notes and a curated interpretation layer. It is a reflection tool for exploring variations of the current situation, not a fortune-telling machine.
 link: https://iching.eggs.gd
-stack: Svelte, TypeScript, Capacitor, iOS, Android, PWA
+stack: Svelte, TypeScript, Capacitor, iOS, Android, PWA, GCP
 ico: icons/iching-favicon.svg
 
 ### Attention Journal
 note: Attention Journal grew from a structured reflection exercise into a lightweight event journal. An event can be captured in seconds with a -10..+10 score and a few optional prompts, without turning journaling into an obligation. The accumulated entries help show the broader shape of a day or period instead of letting the loudest recent event dominate perception.
 link: https://journal.eggs.gd
-stack: Svelte, TypeScript, Capacitor, iOS, Android, PWA
+stack: Svelte, TypeScript, Capacitor, iOS, Android, PWA, GCP
 ico: icons/diary-icon.png
 
 ### The War Journal
@@ -58,7 +58,7 @@ stack: Go, Svelte, AI
 
 ### Kongui
 note: Kongui is a tactical turn-based card game built around prediction and counterplay. The appeal is the moment before an action resolves: reading intent, positioning around it and choosing whether to commit, bait or answer. The design focuses on asymmetric character abilities and clear tactical decisions rather than hiding the game behind randomness.
-stack: Go, Svelte
+stack: Go, Svelte, GCP
 
 ### Perceptrail
 note: Perceptrail is a lightweight media explorer that sits on top of an existing photo library or folder instead of replacing media management. A Go backend runs a Chain-of-Responsibility-style enrichment pipeline where plugins progressively add metadata: model similarity, faces, objects, geo, colors or deterministic rules. Results stream to the client as they become available, with browser workers handling the server stream and grid layout so the UI can stay responsive while media flows in. Traditional media libraries start from folders. Perceptrail starts from similarity.

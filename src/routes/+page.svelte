@@ -7,10 +7,7 @@
 
 <svelte:head>
 	<title>{data.catalog.title}</title>
-	<meta
-		name="description"
-		content={data.catalog.intro.join(' ') || 'eggs.gd project catalog'}
-	/>
+	<meta name="description" content={data.catalog.intro.join(' ') || 'eggs.gd project catalog'} />
 	<meta property="og:title" content={data.catalog.title} />
 	<meta
 		property="og:description"
@@ -21,13 +18,7 @@
 <main class="page">
 	<header class="hero" aria-labelledby="brand">
 		<div class="title-row">
-			<img
-				class="mark"
-				src="{base}/earwig-dark.png"
-				alt=""
-				width="160"
-				height="160"
-			/>
+			<img class="mark" src="{base}/earwig-dark.png" alt="" width="160" height="160" />
 			<h1 id="brand">{data.catalog.title}</h1>
 		</div>
 		{#each data.catalog.intro as paragraph}
@@ -51,13 +42,7 @@
 					<li class="project">
 						<div class="project-title">
 							{#if project.ico}
-								<img
-									class="ico"
-									src="{base}/{project.ico}"
-									alt=""
-									width="48"
-									height="48"
-								/>
+								<img class="ico" src="{base}/{project.ico}" alt="" width="48" height="48" />
 							{/if}
 							{#if project.link}
 								<a class="name" href={project.link} target="_blank" rel="noopener noreferrer">
@@ -98,5 +83,6 @@
 
 	<footer>
 		<span>© {new Date().getFullYear()} {data.catalog.title}</span>
+		<a href="{base}/privacy">Privacy</a>
 	</footer>
 </main>
