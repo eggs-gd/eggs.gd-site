@@ -45,7 +45,14 @@
 								<img class="ico" src="{base}/{project.ico}" alt="" width="48" height="48" />
 							{/if}
 							{#if project.link}
-								<a class="name" href={project.link} target="_blank" rel="noopener noreferrer">
+								<a
+									class="name"
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									data-cta={project.name}
+									data-cta-placement="catalog"
+								>
 									{project.name}<svg
 										class="external-icon"
 										viewBox="0 0 24 24"
