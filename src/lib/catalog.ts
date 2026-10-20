@@ -2,6 +2,7 @@ export type Project = {
 	name: string;
 	note?: string;
 	link?: string;
+	status?: string;
 	stack: string[];
 	ico?: string;
 };
@@ -18,7 +19,7 @@ export type Catalog = {
 	categories: Category[];
 };
 
-const FIELD = /^(note|link|stack|ico)\s*:\s*(.*)$/i;
+const FIELD = /^(note|link|status|stack|ico)\s*:\s*(.*)$/i;
 
 function slugify(value: string): string {
 	return value
@@ -50,6 +51,9 @@ function applyField(project: Project, key: string, value: string): void {
 		case 'link':
 			project.link = value;
 			break;
+		case 'status':
+			project.status = value;
+			break;
 		case 'stack':
 			project.stack = parseStack(value);
 			break;
@@ -67,6 +71,7 @@ function applyField(project: Project, key: string, value: string): void {
  * - `### Project` — entry, then optional fields:
  *   - `note:` description
  *   - `link:` url
+ *   - `status:` current public state
  *   - `stack:` comma-separated tags
  *   - `ico:` path under `static/`
  */

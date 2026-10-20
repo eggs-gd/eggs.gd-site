@@ -75,6 +75,9 @@
 						{#if project.note}
 							<p class="note">{project.note}</p>
 						{/if}
+						{#if project.status}
+							<p class="status"><span>Status</span> {project.status}</p>
+						{/if}
 						{#if project.stack.length}
 							<ul class="stack" aria-label="Stack">
 								{#each project.stack as tag}
@@ -90,6 +93,8 @@
 
 	<footer>
 		<span>© {new Date().getFullYear()} {data.catalog.title}</span>
+		<a href="https://firestart.dev" target="_blank" rel="noopener noreferrer">firestart.dev</a>
+		<a href="https://eggs.gd">eggs.gd</a>
 		<a href="{base}/privacy">Privacy</a>
 	</footer>
 </main>

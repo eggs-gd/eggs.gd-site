@@ -112,7 +112,7 @@ h1 {
 }
 
 .lede + .lede {
-	margin-top: 0.35rem;
+	margin-top: 0.75rem;
 }
 
 .toc {
@@ -224,6 +224,23 @@ span.name {
 	color: var(--text-soft);
 	font-size: 1.02rem;
 	line-height: 1.55;
+}
+
+.status {
+	max-width: 40rem;
+	margin: 0.55rem 0 0;
+	color: var(--text-soft);
+	font-size: 0.95rem;
+	line-height: 1.45;
+}
+
+.status span {
+	margin-right: 0.4rem;
+	color: var(--amber);
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 }
 
 .stack {

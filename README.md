@@ -14,8 +14,10 @@ Intro paragraph.
 ## Category
 
 ### Project name
+
 note: Short description.
 link: https://example.com
+status: Optional current state.
 stack: svelte, capacitor
 ico: icons/project.png
 ```
@@ -24,7 +26,7 @@ ico: icons/project.png
 - paragraphs before the first `##` — intro
 - `##` — category
 - `###` — project
-- `note` / `link` / `stack` / `ico` — optional fields (`ico` is a path under `static/`)
+- `note` / `link` / `status` / `stack` / `ico` — optional fields (`ico` is a path under `static/`)
 
 ## Dev
 
