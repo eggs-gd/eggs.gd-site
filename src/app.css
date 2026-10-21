@@ -311,3 +311,25 @@ footer a:hover {
 		animation: none;
 	}
 }
+
+/* Consent banner colours (the component reads --consent-*). */
+:root {
+	--consent-bg: var(--bg-lift);
+	--consent-text: var(--text);
+	--consent-muted: var(--text-soft);
+	--consent-border: var(--border);
+	--consent-accent: var(--amber);
+}
+
+footer .cookie-link {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--text-muted);
+	font: inherit;
+	cursor: pointer;
+}
+
+footer .cookie-link:hover {
+	color: var(--amber);
+}

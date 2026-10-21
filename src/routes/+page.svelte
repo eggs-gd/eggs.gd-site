@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import Seo from '$lib/Seo.svelte';
+	import { reopenConsent } from '$lib/analytics/consent';
 	import { HOME_DESCRIPTION, jsonLdHome } from '$lib/seo';
 	import type { PageProps } from './$types';
 
@@ -95,5 +96,6 @@
 		<a href="https://firestart.dev">firestart.dev</a>
 		<a href="https://hdzp.dev">hdzp.dev</a>
 		<a href="{base}/privacy">Privacy</a>
+		<button type="button" class="cookie-link" onclick={reopenConsent}>Cookie settings</button>
 	</footer>
 </main>

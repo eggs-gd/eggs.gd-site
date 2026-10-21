@@ -14,7 +14,7 @@
 
 	<article>
 		<h1>Privacy Policy</h1>
-		<p class="updated">Last updated: 18 October 2026</p>
+		<p class="updated">Last updated: 21 October 2026</p>
 
 		<p>
 			eggs.gd is a small, independent project studio. It publishes this website and a number of
@@ -32,7 +32,9 @@
 		<p>
 			The website does not require an account and does not ask for personal information. It uses
 			Google Analytics to collect anonymous, aggregated usage statistics (such as page views and
-			referrers). This data is not used to identify individual visitors.
+			referrers). Analytics cookies are set only if you accept them in the banner. If you decline,
+			Google Analytics receives only cookieless counts. You can change your choice at any time with
+			“Cookie settings” in the footer. This data is not used to identify individual visitors.
 		</p>
 
 		<h2>Signing in with Google</h2>
