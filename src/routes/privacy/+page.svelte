@@ -1,11 +1,13 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import Seo from '$lib/Seo.svelte';
 </script>
 
-<svelte:head>
-	<title>Privacy Policy · eggs.gd</title>
-	<meta name="description" content="Privacy Policy for eggs.gd and its applications." />
-</svelte:head>
+<Seo
+	title="Privacy Policy · eggs.gd"
+	description="Privacy Policy for eggs.gd and its applications."
+	path="/privacy"
+/>
 
 <main class="legal">
 	<a class="back" href="{base}/">eggs.gd</a>
