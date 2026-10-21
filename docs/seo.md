@@ -62,12 +62,21 @@ hdzp.dev is © firestart.dev (not its own holder) so it reads as a child of fire
 - Search results: Search Console only (indexing, impressions, clicks, queries). GA4 does not
   prove a page is indexed.
 
-## Analytics and consent (decision pending)
+## Analytics and consent
 
-One analytics block per site, ID from configuration, Consent Mode with everything `denied`
-by default, banner only where the site decides to have one. `career-space/site` is the model
-(`GA_MEASUREMENT_ID` env var, `Analytics.svelte`). The policy per site is a separate decision
-and does not block the items above.
+The landings with an inline Google tag (firestart.dev, eggs.gd, iching, journal) have one
+switch in `app.html`: `var ANALYTICS_CONSENT = 'granted' | 'denied'`.
+
+- `'granted'`: no banner, Google Analytics cookies on. This is the current behaviour.
+- `'denied'`: Consent Mode. Nothing is stored (no cookies) until a banner calls
+  `setAnalyticsConsent('granted')`. The choice is kept in `localStorage` (`analyticsConsent`) and
+  re-applied before the first page view. Checked in a browser: no cookies when `'denied'`,
+  `_ga` appears after `setAnalyticsConsent('granted')`.
+
+Ad storage, ad user data and ad personalization are always `denied`. A banner is only added
+where a site chooses `'denied'`. fleet.eggs.gd and career.eggs.gd already work this way with
+their own banners (`career-space/site` reads `GA_MEASUREMENT_ID` from the environment). The policy per
+site (and for the apps' Firebase Analytics) is a separate decision.
 
 ## Verify
 
