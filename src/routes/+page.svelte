@@ -1,19 +1,18 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import Seo from '$lib/Seo.svelte';
+	import { HOME_DESCRIPTION, jsonLdHome } from '$lib/seo';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
 </script>
 
-<svelte:head>
-	<title>{data.catalog.title}</title>
-	<meta name="description" content={data.catalog.intro.join(' ') || 'eggs.gd project catalog'} />
-	<meta property="og:title" content={data.catalog.title} />
-	<meta
-		property="og:description"
-		content={data.catalog.intro.join(' ') || 'eggs.gd project catalog'}
-	/>
-</svelte:head>
+<Seo
+	title="{data.catalog.title} — independent software"
+	description={HOME_DESCRIPTION}
+	path="/"
+	jsonLd={jsonLdHome}
+/>
 
 <main class="page">
 	<header class="hero" aria-labelledby="brand">
@@ -93,8 +92,8 @@
 
 	<footer>
 		<span>© {new Date().getFullYear()} {data.catalog.title}</span>
-		<a href="https://firestart.dev" target="_blank" rel="noopener noreferrer">firestart.dev</a>
-		<a href="https://eggs.gd">eggs.gd</a>
+		<a href="https://firestart.dev">firestart.dev</a>
+		<a href="https://hdzp.dev">hdzp.dev</a>
 		<a href="{base}/privacy">Privacy</a>
 	</footer>
 </main>
