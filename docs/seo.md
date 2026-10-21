@@ -41,14 +41,15 @@ page and keeps `trailingSlash = 'always'`.
 
 `© <year> <holder>` first, then cross-links, then Privacy when the site collects anything.
 
-| Site          | Holder       | Links                                 |
-| ------------- | ------------ | ------------------------------------- |
-| firestart.dev | Oleksandr B. | eggs.gd                               |
-| eggs.gd       | earwiG Games | firestart.dev, hdzp.dev, Privacy      |
-| hdzp.dev      | HDZP.dev     | firestart.dev, eggs.gd, fleet.eggs.gd |
-| `*.eggs.gd`   | earwiG Games | eggs.gd, Privacy (`eggs.gd/privacy`)  |
+| Site          | Holder       | Links                                |
+| ------------- | ------------ | ------------------------------------ |
+| firestart.dev | Oleksandr B. | eggs.gd                              |
+| eggs.gd       | earwiG Games | firestart.dev, hdzp.dev, Privacy     |
+| hdzp.dev      | —            | @firestart.dev, eggs.gd (no ©)       |
+| `*.eggs.gd`   | earwiG Games | eggs.gd, Privacy (`eggs.gd/privacy`) |
 
 Projects link only to eggs.gd, not to firestart.dev or hdzp.dev. A site never links to itself.
+hdzp.dev carries no © line on purpose: it credits `@firestart.dev` and `eggs.gd` so it reads as a child of them.
 `firestart.dev → hdzp.dev` is intentionally left for a later easter egg.
 
 ## Measuring
