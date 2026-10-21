@@ -39,11 +39,11 @@ page and keeps `trailingSlash = 'always'`.
 
 ## Footer
 
-`© <year> <holder>` first, then cross-links, then Privacy when the site collects anything.
+`© <year> <holder>` first, then cross-links, then Privacy and "Cookie settings" on sites with the consent banner.
 
 | Site          | Holder        | Links                                |
 | ------------- | ------------- | ------------------------------------ |
-| firestart.dev | Oleksandr B.  | eggs.gd                              |
+| firestart.dev | Oleksandr B.  | eggs.gd, Privacy (own `/privacy`)    |
 | eggs.gd       | earwiG Games  | firestart.dev, hdzp.dev, Privacy     |
 | hdzp.dev      | firestart.dev | eggs.gd                              |
 | `*.eggs.gd`   | earwiG Games  | eggs.gd, Privacy (`eggs.gd/privacy`) |
@@ -62,12 +62,33 @@ hdzp.dev is © firestart.dev (not its own holder) so it reads as a child of fire
 - Search results: Search Console only (indexing, impressions, clicks, queries). GA4 does not
   prove a page is indexed.
 
-## Analytics and consent (decision pending)
+## Analytics and consent
 
-One analytics block per site, ID from configuration, Consent Mode with everything `denied`
-by default, banner only where the site decides to have one. `career-space/site` is the model
-(`GA_MEASUREMENT_ID` env var, `Analytics.svelte`). The policy per site is a separate decision
-and does not block the items above.
+Every site that counts visits uses the Google tag in Consent Mode: nothing is stored until the
+visitor accepts. Declining (or not choosing) still sends cookieless counts.
+
+**Template** (copy-paste across repos until it is extracted; keep the files identical):
+
+- `app.html`: the gtag block. `var ANALYTICS_CONSENT = 'denied'` is the switch, `window.setAnalyticsConsent(choice)`
+  stores the choice in `localStorage` (`analyticsConsent`) and tells the tag, and a stored `granted` is
+  re-applied before the first page view. `data-cta` clicks are reported from here.
+- `src/lib/analytics/consent.ts`: the banner state (`consent` store, `initConsent`, `choose`, `reopenConsent`).
+- `src/lib/analytics/ConsentBanner.svelte`: the small card (bottom right, max 35rem), equal **Decline** and
+  **Accept** buttons, a link to the privacy policy (`privacyHref`). It is mounted once in the root layout.
+- Colours come from `--consent-bg/-text/-muted/-border/-accent`, mapped to the site's own tokens in its global CSS.
+- Footer: a "Cookie settings" button calling `reopenConsent`.
+
+**Per site**
+
+| Site            | Consent                                              |
+| --------------- | ---------------------------------------------------- |
+| firestart.dev   | banner; own `/privacy` page                          |
+| eggs.gd         | banner; `eggs.gd/privacy` is the organisation policy |
+| iching, journal | banner; own `/privacy` (the apps are separate)       |
+| fleet, career   | banner; link to `eggs.gd/privacy`                    |
+| hdzp.dev        | `'denied'`, no banner: cookieless counts only        |
+
+The apps (PWA, iOS, Android) use Firebase Analytics and are not covered by this yet.
 
 ## Verify
 
