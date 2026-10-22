@@ -1,8 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
-const basePath = process.env.BASE_PATH ?? (repositoryName ? `/${repositoryName}` : '');
+// Custom domain at the apex (eggs.gd): always serve from the root. Override with BASE_PATH only for a subpath preview.
+const basePath = process.env.BASE_PATH ?? '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
