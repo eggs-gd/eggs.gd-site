@@ -88,7 +88,25 @@ visitor accepts. Declining (or not choosing) still sends cookieless counts.
 | fleet, career   | banner; link to `eggs.gd/privacy`                    |
 | hdzp.dev        | `'denied'`, no banner: cookieless counts only        |
 
-The apps (PWA, iOS, Android) use Firebase Analytics and are not covered by this yet.
+**The apps** (iching and journal: PWA, iOS, Android) follow the same idea with their own code:
+
+- Until the user allows it, Google Analytics runs in Consent Mode: no cookies, no app instance ID, only
+  anonymous counts. Every event carries `consent: granted|denied`, so the two kinds of data stay apart
+  (register `consent` in GA4 as an event-scoped custom dimension).
+- The popup (**Allow** / **Decline**, equal buttons) is not shown at launch. It is offered once per
+  session after the first thing the user does (a saved entry in journal, the first cast in iching), and
+  when they tap sync, which needs it. "Allow" is remembered; a refusal is not, so it comes back in the next
+  session. The app works the same either way and saves to the device as before.
+- Funnel: anonymous `app_open` → first action → popup → `consent_granted` (with an identifier) or
+  `consent_declined` (anonymous).
+- The native shells default every analytics consent type to denied in `Info.plist` and
+  `AndroidManifest.xml`; check that on a device before a store release.
+
+## Store and landing screenshots
+
+Each product that shows screenshots on its landing keeps a brief next to the generator, in `AppStore/AppStoreImages.md`
+(iching, journal): exact titles and subtitles, what each frame shows, fictional sample data, and `make appstore` to
+regenerate. Never screenshot a real archive.
 
 ## Verify
 
