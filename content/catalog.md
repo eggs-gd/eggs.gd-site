@@ -71,6 +71,7 @@ stack: Go, Svelte, GCP
 ### Perceptrail
 
 note: A media explorer on top of an existing photo library or folder. A Go enrichment pipeline adds metadata through plugins, including similarity, faces, objects, location and color. Results stream to the client progressively; browser workers handle the stream and grid layout so navigation can stay responsive.
+link: https://github.com/eggs-gd/Perceptrail
 stack: Go, Svelte, Python, AI, Docker
 
 ## Prototypes
