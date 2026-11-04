@@ -21,6 +21,12 @@ note: My job search spans several roles and levels. Keeping separate resumes, pr
 link: https://career.eggs.gd
 stack: TypeScript, AI, MCP
 
+### Perceptrail
+
+note: A media explorer on top of an existing photo library or folder. A Go enrichment pipeline adds metadata through plugins, including similarity, faces, objects, location and color. Results stream to the client progressively; browser workers handle the stream and grid layout so navigation can stay responsive.
+link: https://perceptrail.eggs.gd
+stack: Go, Svelte, Python, AI, Docker
+
 ### I Ching: Shape of Momentum
 
 note: A reflection tool built around the coin-and-notebook practice I already used. It combines a clean casting flow, readable hexagram texts, personal notes and a curated interpretation layer. The product emphasis is a usable reading experience, not fortune-telling.
@@ -67,14 +73,6 @@ stack: Python, AI, RAG
 
 note: A tactical turn-based card game built around prediction and counterplay: reading intent, choosing position, and deciding whether to commit, bait or answer. The focus is asymmetric character abilities and clear tactical decisions rather than randomness.
 stack: Go, Svelte, GCP
-
-### Perceptrail
-
-note: A media explorer on top of an existing photo library or folder. A Go enrichment pipeline adds metadata through plugins, including similarity, faces, objects, location and color. Results stream to the client progressively; browser workers handle the stream and grid layout so navigation can stay responsive.
-link: https://github.com/eggs-gd/Perceptrail
-stack: Go, Svelte, Python, AI, Docker
-
-## Prototypes
 
 ### LMSense
 
