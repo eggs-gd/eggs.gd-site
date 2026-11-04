@@ -14,18 +14,21 @@ note: A system for delegating project work to agents without remaining tied to s
 link: https://fleet.eggs.gd/
 status: In development
 stack: Go, Svelte, AI
+ico: icons/fleet-favicon.svg
 
 ### Career Space
 
 note: My job search spans several roles and levels. Keeping separate resumes, profiles and applications consistent by hand became its own problem. Career Space keeps a structured career source of truth and uses a coding agent to derive fit checks, profiles, tailored documents and an application pipeline. The useful idea is consistency between career evidence, positioning and the next decision, not just generating more applications. Personal workspace files are local and gitignored. In my own workflow, search and application throughput increased from roughly 1-3 quality applications/hour to 10+/hour.
 link: https://career.eggs.gd
 stack: TypeScript, AI, MCP
+ico: icons/career-space-icon.png
 
 ### Perceptrail
 
 note: A media explorer on top of an existing photo library or folder. A Go enrichment pipeline adds metadata through plugins, including similarity, faces, objects, location and color. Results stream to the client progressively; browser workers handle the stream and grid layout so navigation can stay responsive.
 link: https://perceptrail.eggs.gd
 stack: Go, Svelte, Python, AI, Docker
+ico: icons/perceptrail-favicon.svg
 
 ### I Ching: Shape of Momentum
 
